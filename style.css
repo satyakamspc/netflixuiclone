@@ -7,14 +7,17 @@
 {
     width: auto;
     height: 100vh;
-    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
 }
 .netflixBackground >img
 {
     width:100%;
     height:100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(30%);
 }
 .navbar
 {
@@ -29,8 +32,8 @@
 }
 .logo > img
 {
-    width:50%;
-    height:57%;
+    width:45%;
+    height:50%;
     margin-left: 30%;
     padding:15px;
 }
@@ -59,4 +62,92 @@
     height:100%;
     border-radius:5px;
     background-color: red;
+}
+@font-face {
+    font-family: 'netflix-font';
+    src: url('assets/NetflixSans-Bold.otf') format('OpenType');
+}
+.infostore
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    flex-direction: column;
+    z-index:1;
+    width:90%;
+    padding:5%;
+    padding-top: 8%;
+    height:80%;
+}
+.center
+{
+    width:60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.9em;
+}
+.comment
+{
+    width:80%;
+    height:20%;
+    z-index:1;
+    font-family: 'netflix-font',Arial, Helvetica, sans-serif;
+    color:white;
+    font-size:3.5rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: -3px;
+    line-height:1.2em;
+}
+.startat
+{
+    height: auto;
+    margin-top:17px;
+    font-family: 'netflix-sans',Arial, Helvetica, sans-serif;
+    font-weight: 650;
+    font-size: 1.3em;
+    color: white;
+}
+.question
+{
+    width:100%;
+    height:35px;
+    font-family: 'netflix-sans',Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: 400;
+    text-align: center;
+}
+.continpbox
+{
+    width:100%;
+    height:20%;
+}
+.inputbox
+{
+    width:100%;
+    height:70%;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.email
+{
+    width:43%;
+    padding:10px;
+    background-color: transparent;
+    border:1px solid rgb(101, 100, 100);
+    border-radius: 5px;
+}
+.getstarted
+{
+    width:23%;
+    background-color:red;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+
 }
